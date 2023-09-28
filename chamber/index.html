@@ -4,52 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This website is the Site Plan home page of Unified Chamber of Commerce. It shows the site purpose and the logo">
+    <meta name="description" content="Home Page of the website Funes Chamber of Commerce. Here you will find the hero and call to action, events, weather, news and release and spotlight.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
-    <title>[Home] Unified Chamber of Commerce - Site Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>[Home] Funes Chamber of Commerce</title>
 </head>
 <body>
     <header>
-        <h1>Unified Chamber of Commerce</h1>
-        <h2>[Home]</h2>
+        <div class="header-logo"><a href="./"><img src="images/logo.webp" alt="Funes Chamber of Commerce Logo"></a></div>
+        <h1 class="header-h1">Funes Chamber of Commerce</h1>
+        <div class="header-social-media">
+            <a class="facebook-logo" href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.webp" alt="Facebook Logo"></a>
+            <a class="instagram-logo" href="https://www.instagram.com" target="_blank"><img  src="images/instagram-logo.webp" alt="instagram Logo"></a>
+        </div>
+        <p id="todaysDate"></p>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="target-audience.html">Target Audience</a></li>
-                <li><a href="design.html">Design</a></li>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="./">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2 class="logo-title">Logo for Unified Chamber of Commerce</h2>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo of Unified Chamber of Commerce">
+    <main class="index-main">
+        <div id="home-meeting-banner">
+            <h2> Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
         </div>
-        <h2 class="purpose-title">Site Purpose</h2>
-        <div class="purpose">
-            <p>Some of the purposes of the website:</p>
-            <ul>
-                <li>Serve as a platform where Chamber members can access the upcoming events or agenda.</li>
-                <li>Offer details to the general public regarding the Chamber's purpose and activities.</li>
-                <li>Serve as a recruitment tool and point of contact for individuals starting new businesses in the Unified region.</li>
-                <li>Share business news about Unified and its impact.</li>
-            </ul>
+        <div id="lastVisit"><p></p></div>        
+        <div class="home-hero">
+            <h2 class="home-hero-h2">Welcome to Funes</h2>
+            <picture>
+                <source media="(max-width: 559px)" srcset="images/funes_hero_small.webp">
+                <source media="(max-width: 1023px)" srcset="images/funes_hero_medium.webp">
+                <img src="images/funes_hero_large.webp" alt="Team meeting banner">
+            </picture>
+            <a class="home-hero-join" href="join.html">Join the Chamber</a>
+        </div>
+        <div class="home-event">
+            <h2>San Lorenzo Trail Race</h2>
+            <div>
+                <p>Come join us in this awesome Trail Race, Friday at 08:00 AM</p>
+                <a href="discover.html">more info...</a>
+            </div>
+            
+        </div>
+        <div class="home-weather">
+            <h2 id="weather-title">Weather</h2>
+            <img id="weather-picture" alt="Weather image">
+            <div class="home-weather-section1">
+                <p><span id="temperature"></span>°C</p>
+                <p><span id="weather-description"></span></p>
+            </div>
+            <div class="home-weather-section2">
+                <p>Wind Speed:</p>
+                <p>Wind Chill:</p>
+            </div>
+            <div class="home-weather-section3">
+                <p><span id="windSpeed"></span> km/h</p>
+                <p><span id="windChill"></span></p>
+            </div>
+            <a href="https://openweathermap.org">openweathermap.org</a>            
+        </div>
+        <div class="home-news-release">
+            <h2>News Release</h2>
+            <p>In a momentous achievement, Funes Chamber of Commerce has been hailed as a national model of excellence, setting new benchmarks for community-driven economic growth. This prestigious recognition comes as a result of the chamber's unwavering commitment to fostering entrepreneurship, supporting local businesses, and implementing innovative initiatives that have propelled the region's prosperity to new heights.</p>
+        </div>
+        <div class="home-join hide-join">
+            <a class="join-link" href="join.html">Join Us!</a>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+        </div>
+        <div class="home-spotlight">
         </div>
     </main>
     <footer>
-        <p class="copyright">&copy; <span id="currentyear"></span></p>
-        <p class="name"><span class="separator">|</span> Ella Yang <span class="separator">|</span></p>
-        <p class="lastmodified"> Last Modified:</p>
+        <div class="footer-section1">
+            <div class="home-footer-logo">
+                <img src="images/logo.webp" alt="Logo of Funes Chamber of Commerce">
+            </div>
+            <section class="address-section">
+                <h3 class="footer-title">Funes Chamber of Commerce</h3>
+                <p class="footer-address">Juan Elorza 1962, Funes, Santa Fe, Argentina.</p>
+            </section>
+        </div>
+        <div class="footer-section2">
+            <p class="footer-email">funes_chamberofcommerce@gmail.com</p>
+            <p class="footer-phone-number">+(54)9 341 5581012</p>
+            <a class="footer-location" href="https://www.google.com/maps/place/ESTUDIO+91/@-32.9194306,-60.8146983,20z/data=!4m15!1m8!3m7!1s0x95b64dac38aea5e7:0xe7709bb9296042f8!2sFunes,+Santa+Fe!3b1!8m2!3d-32.9215358!4d-60.8109887!16zL20vMDd6Y3Bo!3m5!1s0x95b64c53333b8c1d:0x139624a0f0e0fc4c!8m2!3d-32.919491!4d-60.814488!16s%2Fg%2F11b6_mf2vw" target="_blank">📍 Location Map</a>
+        </div>
+        <div class="footer-section3">
+            <p class="copyright">&copy; <span id="currentyear"></span> Funes Chamber </p>
+            <p class="footer-name"><span class="footer-separator"> | </span> Natanael da Matta <span class="footer-separator"> | </span></p>
+            <p class="footer-wdd230">WDD 230 Project <span class="footer-separator"> | </span></p>
+            <p class="lastmodified"></p>
+        </div>
+        <div class="footer-section4">
+            <p class="lastmodified2"></p>
+        </div>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/windchill.js"></script>
 </body>
 </html>
