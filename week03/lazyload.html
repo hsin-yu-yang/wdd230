@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <meta name="description" content="This is a webpage to demonstrate the principle of lazy loading images">
+    <title>W03: Team Activity - Home Page Responsive Images</title>
+</head>
+<body>
+    <main>
+        <h1>Hong Kong Temple</h1>
+        <picture>
+            <source media="(min-width: 960px)" srcset="img/2.webp">
+            <source media="(min-width: 400px)" srcset="img/1.webp">     
+            <img src="img/1.webp">
+        </picture>
+     
+    </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d23033.699868235297!2d-111.7886862!3d43.8099518!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696540090532!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+<script src="scripts/main.js"></script>
+</html>
