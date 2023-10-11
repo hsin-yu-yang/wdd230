@@ -1,11 +1,28 @@
 /* HAMBURGER BUTTON */
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
+let nav=document.getElementById("primaryNav")
+let hamburgerBtn=document.getElementById("hamburgerBtn")
+console.log(nav)
+if (nav.style.display=== "block"){
+    nav.style.display="none";
+    hamburgerBtn.src="./images/hamburger.png"  
+} else{
+    nav.style.display= "block";
+    hamburgerBtn.src="./images/x.png"
+}
 };
 
 const x = document.getElementById("hamburgerBtn")
-x.onclick = toggleMenu;
+x.addEventListener("click",toggleMenu);
+
+function toggledarkmode(){
+    var body = document.body
+    body.classList.toggle("dark_mode")
+    var header = document.header
+    header.classList.toggle("dark_mode")
+}
+const buttton = document.getElementById("dark_mode")
+buttton.addEventListener("click",toggledarkmode);
 
 /* TODAY'S DATE IN HEADER */
 const todayDateField = document.querySelector("#todaysDate");
