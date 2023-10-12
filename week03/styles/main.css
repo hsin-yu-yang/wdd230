@@ -2,6 +2,10 @@ img {
     width: 80vw;
 }
 
+main{
+    position: relative;
+}
+
 h1{
     position: absolute;
     top: 40px; left: 40px; 
