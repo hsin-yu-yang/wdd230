@@ -10,15 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Join Page of the website Unified Chamber of Commerce. Here you will find the form for joining the chamber">
-    <link rel="stylesheet" href="chamber/styles/normalize.css">
-    <link rel="stylesheet" href="chamber/styles/small.css">
-    <link rel="stylesheet" href="chamber/styles/medium.css">
-    <link rel="stylesheet" href="chamber/styles/large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <title>[Join] Unified Chamber of Commerce</title>
+    <title>[Form] Unified Chamber of Commerce</title>
 </head>
 <main class="join-main">
     <div id="join-meeting-banner">
@@ -28,11 +24,11 @@
         <p class="lastVisitP"></p>
     </div>
     <h2>Join Unified Chamber of Commerce</h2>
-    <form method="get" action="thankyou.html">
+    <form title="Form" method="get" action="thankyou.html">
         <fieldset>
             <legend>Personal Information</legend>
             <label class="top">First Name*<input type="text" name="fname" required></label>
-            <label class="top">Last Name*<input type="text" name="lname" required></label>
+            <label class="top">Password*<input type="password" name="password" required></label>
             <label class="top">Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
             <label class="top">Phone Number*<input type="tel" name="phone" required></label>
         </fieldset>
@@ -42,6 +38,8 @@
             <div class="membership">
                 <h3>Select a Membership level</h3>
                 <p>Click one to see info...</p> 
+                <label><input type="range"></label>
+                <label class="top">Password*<input type="password" name="password" required></label>
                 <label class="sbs"><input type="radio" name="membership" value="np" onclick="showMembershipInfo('np')"> NP Membership</label>
                 <label class="sbs"><input type="radio" name="membership" value="bronze" onclick="showMembershipInfo('bronze')"> Bronze Membership</label>
                 <label class="sbs"><input type="radio" name="membership" value="silver" onclick="showMembershipInfo('silver')"> Silver Membership</label>
@@ -49,8 +47,6 @@
             </div>
             <div class="membership-info">
             </div>
-            <label class="top">Business Name*<input type="text" name="bussname" required></label>
-            <label class="top">Business Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label>
             <label class="top">Briefly describe your business<textarea name="description" cols="30" rows="7"></textarea></label>
             <input type="hidden" id="hiddenDate" name="hiddenDate">
         </fieldset>
