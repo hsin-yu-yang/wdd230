@@ -13,6 +13,10 @@ header{
     padding: 10px 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.dark_mode{
+    background-color: lightslategray;
+    color:white;
+}
 h1, h2 {
     font-family: 'Roboto', sans-serif;
 }
