@@ -7,6 +7,9 @@ nav {
     grid-column: 1/4;
     grid-row: 3;
 }
+#primaryNav{
+    display: none;
+}
 nav ul {
     list-style-type: none;
     padding: 0;

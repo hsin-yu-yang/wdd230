@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="week03/styles/main.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -35,6 +36,14 @@
         </nav>
     </header>
     <main>
+        <h1 class="temple">Hong Kong Temple</h1>
+        <h2>You visited <span id="visit"></span> time</h2>
+        <picture>
+            <source media="(min-width: 960px)" srcset="week03/img/2.webp">
+            <source media="(min-width: 400px)" srcset="week03/img/1.webp">     
+            <img src="week03/img/1.webp">
+        </picture>
+
         <h2>WDD 230: Assignment Portal</h2>
         <section class="links">
             <h3>Learning Activities</h3>
@@ -61,11 +70,13 @@
 
     </section>
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d23033.699868235297!2d-111.7886862!3d43.8099518!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696540090532!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
             <p class="copyright">&copy; <span id="currentyear"></span>.:|:. Ella Yang.:|:. Taiwan</p>
             <p class="lastmodified">Last Modified:</p>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="week03/script/main.js"></script>
     <script type="module" src="scripts/weather.js"></script>
     <script src="scripts/links.js"></script>
 </body>

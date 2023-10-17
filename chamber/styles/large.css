@@ -16,7 +16,13 @@
         margin-top: 0;
         padding: 0;
     }
-    
+    #primaryNav{
+        display: block;
+    }
+    /* Hamberger*/
+    #hamburgerBtn{
+        display: none;
+    }
     /* GRID HOME MAIN */
     .index-main {
         grid-template-columns: 1fr 3fr 1fr;

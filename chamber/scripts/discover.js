@@ -35,15 +35,20 @@ else {
 let lastVisit = localStorage.getItem("lastVisit");
 const lastVisitElement = document.querySelector("#lastVisit p");
 
-if (lastVisitElement != null) {
     if (lastVisit) {
         let currentDate = new Date();
         let previousDate = new Date(lastVisit);
         let timeDifference = currentDate.getTime() - previousDate.getTime();
     
         let differenceInDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    
+    if (differenceInDays>1){
         lastVisitElement.innerText = `You visited this webpage ${differenceInDays} days ago!`;
     }
+    else{
+        lastVisitElement.innerText = `Back so soon! Awesome!`;
+    }   
+    }
+    else {
+        lastVisitElement.innerText = `Welcome! Let us know if you have any questions.`
+    }
     localStorage.setItem("lastVisit", new Date());
-};
