@@ -1,0 +1,69 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url":"https://codepen.io/Ella-Yang/pen/ZEVXQbN",
+            "title":"JavaScript Code Pen"
+          },
+          {
+            "url":"week01/chamber-site-plan.html",
+            "title":"Chamber - Site Plan"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url":"index.html",
+            "title":"Home Page Enhancement"
+          },
+          {
+            "url":"chamber/index.html",
+            "title":"The Chamber of Commerce Home Page"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url":"week03/lazyload.html",
+            "title":"Responsive Images"
+          },
+          {
+            "url":"chamber/discover.html",
+            "title":"The Chamber Discover Page"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url":"form.html",
+            "title":"Form Build"
+          },
+          {
+            "url":"chamber/join.html",
+            "title":"The Chamb Join Page"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url":"index.html",
+            "title":"Home Page Weather"
+          },
+          {
+            "url":"chamber/directory.html",
+            "title":"The Chamber Directory Page"
+          }
+        ]
+      }
+    ]
+    }
