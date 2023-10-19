@@ -1,6 +1,13 @@
 .portal-grid{
     justify-content: center;
 }
+#primaryNav{
+    display: none;
+}
+   /* Hamberger*/
+   #hamburgerBtn{
+    display: block;
+}
 header{
     background-color: #B3CDD1;
     display: flex;

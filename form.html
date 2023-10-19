@@ -16,6 +16,25 @@
     <link rel="icon" href="favicon.ico">
     <title>[Form] Unified Chamber of Commerce</title>
 </head>
+<header>
+    <div class="header-logo"><a href="./"><img src="chamber/images/logo.webp" alt="Unified Chamber of Commerce Logo"></a></div>
+    <h1 class="header-h1">Unified Chamber of Commerce</h1>
+    <div class="header-social-media">
+        <a class="facebook-logo" href="https://www.facebook.com" target="_blank"><img src="chamber/images/facebook-logo.webp" alt="Facebook Logo"></a>
+        <a class="instagram-logo" href="https://www.instagram.com" target="_blank"><img  src="chamber/images/instagram-logo.webp" alt="instagram Logo"></a>
+    </div>
+    <p id="todaysDate"></p>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="./">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 <main class="join-main">
     <div id="join-meeting-banner">
         <h2>Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
@@ -27,10 +46,12 @@
     <form title="Form" method="get" action="thankyou.html">
         <fieldset>
             <legend>Personal Information</legend>
-            <label class="top">User Name*<input type="text" name="fname" required></label>
-            <label class="top">Password*<input type="password" name="password" required></label>
-            <label class="top">Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
-            <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+            <label class="top">User Name*<input type="text" name="fname" id= "fname" required></label>
+            <label class="top">Password*<input type="password" name="password" id= "password" required></label>
+            <label class="top">Email*<input type="email" name="email" id="email" placeholder="someone@example.com" required></label>
+            <label class="top">Phone Number*<input type="tel" name="phone" id="phone" required></label>
+            <label class="top">Page Rating*<input type="range" name="rating" id="rating" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value" required></label>
+            <output id="output"></output>
         </fieldset>
 
         <fieldset>
@@ -53,3 +74,29 @@
         <input type="submit" value="Join the Chamber" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
     </form>
 </main>
+<footer>
+    <div class="footer-section1">
+        <div class="home-footer-logo">
+            <img src="chamber/images/logo.webp" alt="Logo of Unified Chamber of Commerce">
+        </div>
+        <section class="address-section">
+            <h3 class="footer-title">Unified Chamber of Commerce</h3>
+            <p class="footer-address">Taiwan Taoyuan Boshan street No.312</p>
+        </section>
+    </div>
+    <div class="footer-section2">
+        <p class="footer-email">Unified_chamberofcommerce@gmail.com</p>
+        <p class="footer-phone-number">+(01)385 313 1742</p>
+        <a class="footer-location" href="https://www.google.com/maps/place/ESTUDIO+91/@-32.9194306,-60.8146983,20z/data=!4m15!1m8!3m7!1s0x95b64dac38aea5e7:0xe7709bb9296042f8!2sUnified,+Santa+Fe!3b1!8m2!3d-32.9215358!4d-60.8109887!16zL20vMDd6Y3Bo!3m5!1s0x95b64c53333b8c1d:0x139624a0f0e0fc4c!8m2!3d-32.919491!4d-60.814488!16s%2Fg%2F11b6_mf2vw" target="_blank">📍 Location Map</a>
+    </div>
+    <div class="footer-section3">
+        <p class="copyright">&copy; <span id="currentyear"></span> Unified Chamber </p>
+        <p class="footer-name"><span class="footer-separator"> | </span> Ella Yang <span class="footer-separator"> | </span></p>
+        <p class="footer-wdd230">WDD 230 Project <span class="footer-separator"> | </span></p>
+        <p class="lastmodified"></p>
+    </div>
+    <div class="footer-section4">
+        <p class="lastmodified2"></p>
+    </div>
+</footer>
+<script src="scripts/main.js"></script>

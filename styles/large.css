@@ -7,3 +7,9 @@
         max-width: 25%;
     }
 }
+#primaryNav{
+    display: flex;
+}
+#hamburgerBtn{
+    display: none;
+}

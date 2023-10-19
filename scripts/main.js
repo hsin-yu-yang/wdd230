@@ -40,3 +40,9 @@ function toggleMenu() {
     }
     const buttton = document.getElementById("dark_mode")
     buttton.addEventListener("click",toggledarkmode);
+
+    let rating=document.getElementById("rating")
+    rating.addEventListener("change",()=>{
+        let output=document.getElementById("rating")
+        output.innerHTML=rating.value
+    })
