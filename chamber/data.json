@@ -3,7 +3,7 @@
         {
             "img":"best-soccer.webp",
             "name":"Best Soccer",
-            "address":"Rioja 150, Funes",
+            "address":"Rioja 150, United",
             "phone":"+549 341 548 652",
             "url":"www.bestsoccer.com",
             "membership":"bronze",
@@ -13,7 +13,7 @@
         {
             "img":"fastest-taxi.webp",
             "name":"Fastest Taxi",
-            "address":"Santa Fe 190, Funes",
+            "address":"Santa Fe 190, United",
             "phone":"+549 341 525 456",
             "url":"www.fastestaxi.com",
             "membership":"silver",
@@ -23,7 +23,7 @@
         {
             "img":"cool-watches.webp",
             "name":"Cool Watches",
-            "address":"Santa Fe 1450, Funes",
+            "address":"Santa Fe 1450, United",
             "phone":"+549 341 456 132",
             "url":"www.coolwatches.com",
             "membership":"gold",
@@ -33,7 +33,7 @@
         {
             "img":"tasty-biscuits.webp",
             "name":"Tasty Biscuits",
-            "address":"San Lorenzo 380, Funes",
+            "address":"San Lorenzo 380, United",
             "phone":"+549 341 298 456",
             "url":"www.biscuits.com",
             "membership":"gold",
@@ -43,7 +43,7 @@
         {
             "img":"laptop-ready.webp",
             "name":"Laptop Ready!",
-            "address":"24 Septiembre 980, Funes",
+            "address":"24 Septiembre 980, United",
             "phone":"+549 341 980 899",
             "url":"www.laptopready.com",
             "membership":"silver",
@@ -53,7 +53,7 @@
         {
             "img":"fridge-repairs.webp",
             "name":"Fridge Repairs",
-            "address":"San Jorge 1024, Funes",
+            "address":"San Jorge 1024, United",
             "phone":"+549 341 525 655",
             "url":"www.fsrepairs.com",
             "membership":"bronze",
@@ -63,7 +63,7 @@
         {
             "img":"comfortable-chairs.webp",
             "name":"Comfortable Chairs",
-            "address":"Arijon 555, Funes",
+            "address":"Arijon 555, United",
             "phone":"+549 341 525 177",
             "url":"www.chairs.com",
             "membership":"bronze",
@@ -73,7 +73,7 @@
         {
             "img":"juana-cakes.webp",
             "name":"Juana Cakes",
-            "address":"San Lorenzo 322, Funes",
+            "address":"San Lorenzo 322, United",
             "phone":"+549 341 999 789",
             "url":"www.juanacakes.com",
             "membership":"np",
@@ -83,7 +83,7 @@
         {
             "img":"pedro-puertas.webp",
             "name":"Pedro Puertas",
-            "address":"Favaloro 422, Funes",
+            "address":"Favaloro 422, United",
             "phone":"+549 341 525 416",
             "url":"www.pedropuertas.com",
             "membership":"gold",
