@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta name="author" content="Ella Yang">
-    <meta property="og:title" content="Unified Chamber of Commerce"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="favicon.ico"/>
-    <meta property="og:url" content="https://hsin-yu-yang.github.io/wdd230/chamber/form.html"/>
     <meta charset="UTF-8">
+    <meta name="author" content = "Ella Yang">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join Page of the website Unified Chamber of Commerce. Here you will find the form for joining the chamber">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="week03/styles/main.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <title>[Form] Unified Chamber of Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <link rel="icon" href="health.png">
+    <title>Ella Yang - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Assignment portal for Ella Yangin WDD 230: Web Frontend Development at Brigham Young University - Idaho">
 </head>
-<header>
-    <div class="header-logo"><a href="./"><img src="chamber/images/logo.webp" alt="Unified Chamber of Commerce Logo"></a></div>
-    <h1 class="header-h1">Unified Chamber of Commerce</h1>
-    <div class="header-social-media">
-        <a class="facebook-logo" href="https://www.facebook.com" target="_blank"><img src="chamber/images/facebook-logo.webp" alt="Facebook Logo"></a>
-        <a class="instagram-logo" href="https://www.instagram.com" target="_blank"><img  src="chamber/images/instagram-logo.webp" alt="instagram Logo"></a>
-    </div>
-    <p id="todaysDate"></p>
-    <nav>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-        <ul id="primaryNav">
-            <li><a href="./">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li class="active"><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<body class="portal-grid">
+    <header>
+        <div class="profile-pic">
+            <img src="images/profilepicture.jpg" alt="ella's Picture">
+        </div>
+        <h1>Ella Yang</h1>
+        <button id="dark_mode">Dark mode</button>>
+        <nav>
+            <img id="hamburgerBtn" src="chamber/images/hamburger.png">
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
 <main class="join-main">
-    <div id="join-meeting-banner">
-        <h2>Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
-    </div>
     <div class="lastVisit">
         <p class="lastVisitP"></p>
     </div>
@@ -47,8 +44,31 @@
         <fieldset>
             <legend>Personal Information</legend>
             <label class="top">User Name*<input type="text" name="fname" id= "fname" required></label>
-            <label class="top">Password*<input type="password" name="password" id= "password" required></label>
-            <label class="top">Email*<input type="email" name="email" id="email" placeholder="someone@example.com" required></label>
+            <div class="wrapper">
+                <div class="form-wrapper">
+                  <h2 class="title">Login to Your Account</h2>
+                  <form id="form" class="form">
+                    <div class="form-group">
+                      <label for="name">
+                        Email:
+                      </label>
+                      <input id="email" type="email" placeholder="someone@gmail.com" required>
+                      <p id="emailError"></p>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">
+                        Password:
+                      </label>
+                      <input id="password" type="password" placeholder="Enter Password" required>
+                      <p id="passwordError"></p>
+                    </div>
+                    <input type="submit" value="Login">
+                  </form>
+                </div>
+                <div class="success-msg-container">
+                  <h2 id="msg" class="msg">You have provided the correct details and your form will be processed</h2>
+                </div>
+              </div>
             <label class="top">Phone Number*<input type="tel" name="phone" id="phone" required></label>
             <label class="top">Page Rating*<input type="range" name="rating" id="rating" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value" required></label>
             <output id="output"></output>
@@ -74,28 +94,7 @@
     </form>
 </main>
 <footer>
-    <div class="footer-section1">
-        <div class="home-footer-logo">
-            <img src="chamber/images/logo.webp" alt="Logo of Unified Chamber of Commerce">
-        </div>
-        <section class="address-section">
-            <h3 class="footer-title">Unified Chamber of Commerce</h3>
-            <p class="footer-address">Taiwan Taoyuan Boshan street No.312</p>
-        </section>
-    </div>
-    <div class="footer-section2">
-        <p class="footer-email">Unified_chamberofcommerce@gmail.com</p>
-        <p class="footer-phone-number">+(01)385 313 1742</p>
-        <a class="footer-location" href="https://www.google.com/maps/place/ESTUDIO+91/@-32.9194306,-60.8146983,20z/data=!4m15!1m8!3m7!1s0x95b64dac38aea5e7:0xe7709bb9296042f8!2sUnified,+Santa+Fe!3b1!8m2!3d-32.9215358!4d-60.8109887!16zL20vMDd6Y3Bo!3m5!1s0x95b64c53333b8c1d:0x139624a0f0e0fc4c!8m2!3d-32.919491!4d-60.814488!16s%2Fg%2F11b6_mf2vw" target="_blank">📍 Location Map</a>
-    </div>
-    <div class="footer-section3">
-        <p class="copyright">&copy; <span id="currentyear"></span> Unified Chamber </p>
-        <p class="footer-name"><span class="footer-separator"> | </span> Ella Yang <span class="footer-separator"> | </span></p>
-        <p class="footer-wdd230">WDD 230 Project <span class="footer-separator"> | </span></p>
-        <p class="lastmodified"></p>
-    </div>
-    <div class="footer-section4">
-        <p class="lastmodified2"></p>
-    </div>
+    <p class="copyright">&copy; <span id="currentyear"></span>.:|:. Ella Yang.:|:. Taiwan</p>
+    <p class="lastmodified">Last Modified:</p>
 </footer>
 <script src="scripts/main.js"></script>
